@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "compilerOptions": {
+    "types": ["vitest/globals", "node"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "paths": {
+      "#utils/*.js": ["./src/utils/*.ts"],
+      "#*": ["./src/*.ts"]
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["dist"]
+}
